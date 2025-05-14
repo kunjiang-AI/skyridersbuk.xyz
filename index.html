@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Riders BUK - High-Speed Casual Vehicle Driving Game</title>
+    <meta name="description" content="Play Sky Riders BUK online for free - an adrenaline-fueled driving adventure with cars and bikes through challenging sky tracks. Test your skills now!">
+    <link rel="canonical" href="https://skyridersbuk.xyz">
+    
+    <style>
+        :root {
+            --apple-blue: #0071e3;
+            --apple-gray: #f5f5f7;
+            --apple-dark: #1d1d1f;
+            --apple-light: #ffffff;
+            --apple-accent: #86868b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--apple-gray);
+            color: var(--apple-dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--apple-dark);
+            color: var(--apple-light);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--apple-accent);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 2rem 0;
+            background-color: var(--apple-dark);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--apple-blue);
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background-color: var(--apple-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: var(--apple-blue);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .controls {
+            background-color: var(--apple-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .controls ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        
+        .controls li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .controls li::before {
+            content: "•";
+            color: var(--apple-blue);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .info-item {
+            background-color: var(--apple-light);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .info-item h3 {
+            font-size: 1rem;
+            color: var(--apple-accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-item p {
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--apple-blue);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #005bbf;
+        }
+        
+        footer {
+            background-color: var(--apple-dark);
+            color: var(--apple-light);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .game-container {
+                padding-bottom: 75%; /* Taller aspect ratio for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sky Riders BUK</h1>
+        <p class="tagline">A high-speed casual vehicle driving game in the sky</p>
+    </header>
+    
+    <div class="container">
+        <p>Put your driving skills to the test as you complete several challenging tracks. Stay focused and avoid falling off! Whether you're behind the wheel of a car or riding a motorcycle, prepare for an adrenaline-fueled adventure.</p>
+        
+        <a href="#play-now" class="cta-button">Play Now</a>
+        
+        <div id="play-now" class="game-container">
+            <iframe src="https://www.crazygames.com/embed/sky-riders-buk" frameborder="0" allow="gamepad *;"></iframe>
+        </div>
+        
+        <h2>About Sky Riders BUK</h2>
+        <p>Sky Riders BUK is an exciting driving game that combines realistic physics with thrilling sky-high tracks. Navigate cars and motorcycles through challenging courses, perform amazing stunts, and test your driving abilities to the limit. With its unique blend of casual gameplay and realistic physics, Sky Riders BUK offers an unforgettable racing experience.</p>
+        
+        <div class="info-grid">
+            <div class="info-item">
+                <h3>Rating</h3>
+                <p>8.6/10 (900,000+ votes)</p>
+            </div>
+            <div class="info-item">
+                <h3>Technology</h3>
+                <p>HTML5 (Unity WebGL)</p>
+            </div>
+            <div class="info-item">
+                <h3>Platform</h3>
+                <p>Browser (desktop, mobile, tablet)</p>
+            </div>
+            <div class="info-item">
+                <h3>Last Updated</h3>
+                <p>December 2023</p>
+            </div>
+        </div>
+        
+        <h2>Game Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Sky-High Racing</h3>
+                <p>Drive both cars and motorcycles through exciting tracks set high in the sky, offering breathtaking views and thrilling challenges.</p>
+            </div>
+            <div class="feature-card">
+                <h3>30 Challenging Tracks</h3>
+                <p>Test your skills across 30 unique and increasingly difficult tracks, each with its own obstacles and challenges.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Realistic Physics</h3>
+                <p>Experience realistic vehicle physics that make the game both challenging and rewarding as you master control of your vehicle.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Awesome Stunts</h3>
+                <p>Perform incredible stunts as you race through the sky, adding an extra layer of excitement to your driving adventure.</p>
+            </div>
+        </div>
+        
+        <h2>How to Play</h2>
+        <p>Sky Riders BUK features intuitive controls that are easy to learn but challenging to master. Use your keyboard to navigate your vehicle through the challenging sky tracks.</p>
+        
+        <div class="controls">
+            <h3>Controls:</h3>
+            <ul>
+                <li>W or Up Arrow key = Move forward</li>
+                <li>S or Down Arrow key = Move backward</li>
+                <li>A or Left Arrow key = Move left</li>
+                <li>D or Right Arrow key = Move right</li>
+                <li>Space = Handbrake</li>
+                <li>Left mouse button = Interact with in-game UI</li>
+            </ul>
+        </div>
+        
+        <h2>Why Play Sky Riders BUK?</h2>
+        <p>Sky Riders BUK offers a unique blend of casual gaming with realistic physics, making it accessible yet challenging. Whether you're looking for a quick gaming session or want to master all 30 tracks, this game provides hours of entertainment. With both cars and motorcycles available, you can experience different driving styles and challenges.</p>
+        
+        <p>The game's realistic physics engine creates a more immersive experience compared to other casual driving games, while still maintaining the fun factor that makes it appealing to players of all skill levels.</p>
+        
+        <h2>Start Your Sky Riding Adventure</h2>
+        <p>Ready to conquer the skies? Jump into your vehicle and take on the challenging tracks of Sky Riders BUK. Test your skills, perform amazing stunts, and experience the thrill of high-speed driving above the clouds!</p>
+        
+        <a href="#play-now" class="cta-button">Play Sky Riders BUK Now</a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Sky Riders BUK | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
